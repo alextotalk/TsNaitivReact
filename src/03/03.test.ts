@@ -1,8 +1,18 @@
 import {StudentType} from "../02/02";
 import {addSkill, changActive, doesStudentLiveIn} from "./03";
 
+let car: any
 let student: StudentType
 beforeEach(() => {
+    car = {
+        model: "lambda",
+        tiers: 4,
+        door: 5,
+        distance: 0,
+        drive: function (km:number, distance: number) {
+            this.distance = km + distance
+        }
+    }
     student = {
         id: 1,
         "name": "Dimych",
@@ -31,6 +41,11 @@ beforeEach(() => {
         ]
     }
 
+})
+
+test("car mast be drive", () => {
+    car.drive(0, 50)
+    expect(car.distance).toBe(50)
 })
 test("new skill should be added", () => {
     addSkill(student, "js")
