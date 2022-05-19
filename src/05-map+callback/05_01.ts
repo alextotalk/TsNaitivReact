@@ -42,3 +42,4 @@ const dev4 = people.map( man => ({
     lastName: man.name.split(" ")[1]
 }))
 const massages= people.map(man=>`Hello ${man.name.split(" ")[0]}, welcome to IT my friend`)
+

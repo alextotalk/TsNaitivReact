@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {User} from "./05-map+callback/06-callback";
+ import reportWebVitals from './reportWebVitals';
+ import {SortDate} from "./001 -sort data/Sort";
 
 ReactDOM.render(
   <React.StrictMode>
     {/*<App />*/}
-    <User />
+    {/*<User />*/}
+      <SortDate/>
   </React.StrictMode>,
   document.getElementById('root')
 );
