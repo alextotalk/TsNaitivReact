@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
  import reportWebVitals from './reportWebVitals';
- import {SortDate} from "./001 -sort data/Sort";
+ import {AssociativeArr} from "./8- acosiating  array/08_01";
 
 ReactDOM.render(
   <React.StrictMode>
     {/*<App />*/}
     {/*<User />*/}
-      <SortDate/>
+    {/*  <SortDate/>*/}
+     < AssociativeArr/>
   </React.StrictMode>,
   document.getElementById('root')
 );
